@@ -1,36 +1,112 @@
 * {
-    font-family: sans-serif;
+    box-sizing: border-box;
 }
 
+:root {
+    --primary: rgb(218, 54, 54);
+    --secondary: rgb(253, 223, 223);
+    --tertiary: rgb(187, 63, 100); 
+    --dark: rgb(43, 3, 8); 
+    --light: rgb(253, 250, 245); 
+}
+
+body {
+    margin: 1;
+    padding: 1;
+    font-family: sans-serif;
+    color: var(--primary);
+    background-color: var(--light);
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 1;
+}
+
+p {
+    margin: 1;
+}
 
 header {
+    padding: 15px 6% 15px 0;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 1%;
-    margin: 1%;
-    background-color: rgb(243, 59, 84);
-    color: white;
+    background-color: var(--tertiary);
+    box-shadow: 0 5px 35px rgb(90, 27, 27);
 }
 
-ol, ul {
-    list-style: none;
-    text-decoration: underline;
-    font-weight: bold;
+header h1 {
+    color: var(--tertiary);
+    background-color: var(--secondary);
+    padding: 5px 1% 5px 6%;
+    margin: 0;
+    font-size: 4vw;
+    line-height: 1;
 }
 
-nav ul {
+nav {
     display: flex;
-    justify-content: space-between;
-    min-width: 300px;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.name {
-    margin-left: 2%;
-}
- 
-.goal {
-    margin: 1%;
+nav a {
+    padding: 5px 10px;
+    color: var(--secondary);
+    margin-right: 10px;
+    background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.1em;
+    transition: all 0.25s ease;
+    background-position: bottom;
+    font-size: 1.5rem;
+    text-decoration: none;
 }
 
+nav a:hover {
+    background-size: 100% 100%;
+    color: var(--primary)
+}
+nav a:last-child {
+    margin-right: 1;
+}
 
+main {
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+
+.banner {
+    background-image: url(banner.jpg), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+    min-height: 30vh;
+    padding: 2% 6%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+    color: var(--light);
+}
+
+.banner div {
+    flex: 0 0 90%;
+}
+
+.banner h2 {
+    background-color: var(--secondary);
+    color: var(--tertiary);
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 2rem;
+    line-height: 1.1;
+    display: inline;
+}
