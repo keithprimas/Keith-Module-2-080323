@@ -1,0 +1,36 @@
+* {
+    font-family: sans-serif;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    margin: 1%;
+    background-color: rgb(243, 59, 84);
+    color: white;
+}
+
+ol, ul {
+    list-style: none;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+}
+
+.name {
+    margin-left: 2%;
+}
+ 
+.goal {
+    margin: 1%;
+}
+
+
