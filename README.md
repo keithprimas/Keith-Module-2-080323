@@ -20,3 +20,6 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 ## Website Screenshot
 ![Alt text](assets/Screenshot.png)
+
+## Deployed Website 
+https://keithprimas.github.io/Keith-Module-2-080323/
