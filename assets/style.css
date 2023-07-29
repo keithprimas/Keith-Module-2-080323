@@ -3,10 +3,10 @@
 }
 
 :root {
-    --primary: rgb(126, 69, 78);
-    --secondary: #f8b1b6; 
-    --tertiary: rgb(141, 31, 58); 
-    --dark: rgb(87, 6, 15); 
+    --primary: rgb(63, 30, 26);
+    --secondary: #fcd7d7; 
+    --tertiary: rgb(223, 121, 114); 
+    --dark: #5f0a0a; 
     --light: #f8e4e4; 
 }
 
@@ -28,8 +28,9 @@ h6 {
     margin: 1;
 }
 
-p {
-    margin: 1;
+header h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
 }
 
 header {
@@ -47,7 +48,7 @@ header {
 header h1 {
     color: var(--tertiary);
     background-color: var(--secondary);
-    padding: 5px 1% 5px 6%;
+    padding: 5px 1% 5px 7%;
     margin: 0;
     font-size: 4vw;
     line-height: 1;
@@ -68,7 +69,7 @@ nav a {
     background-size: 100% 0.1em;
     transition: all 0.25s ease;
     background-position: bottom;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-decoration: none;
 }
 
@@ -76,6 +77,8 @@ nav a:hover {
     background-size: 100% 100%;
     color: var(--primary)
 }
+
+
 nav a:last-child {
     margin-right: 1;
 }
@@ -109,9 +112,22 @@ main {
     color: var(--tertiary);
     margin: 0;
     padding: 5px 10px;
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 1.1;
     display: inline;
+}
+
+.text {
+    margin: 1;
+    color: var(--dark);
+    text-indent: 20px;
+}
+
+img {
+    max-width: 90px;
+    float: right;
+    border: 3px solid var(--tertiary);
+    margin-left: 10px;
 }
 
 .page {
@@ -164,6 +180,7 @@ main {
 
 h2 {
     font-size: 50px;
+    color: var(--dark);
 }
 .flex-item:first-child {
     min-height: 400px;
